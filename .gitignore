@@ -1,4 +1,7 @@
 .architect
+.pem
+.crx
+packages/
 bootstrap.json
 build/
 ext/
