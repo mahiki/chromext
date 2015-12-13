@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+
+    "name": "ex-er",
+    "version": "0.1",
+    "description": "this extension removes content with keywords shown in blocker.js",
+    "icons": {
+        "16": "raven.png",
+        "32": "raven.png",
+        "48": "raven.png",
+        "128": "raven.png"
+    },
+    "background": {"page": "background.html"},
+    "browser_action": {
+        "name": "block the donald",     
+        "default_icon": "raven_19.png",
+        "default_title": "trump blocker",
+        "default_popup": "popup.html"
+    },
+//    "page_action": {
+//        "default_icon": "raven_19.png",
+//        "default_title": "trump-blocked"
+//        //"popup": "popup.html"
+//    },
+    "content_scripts": [
+        {
+            //"run_at": "document_start",
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["jquery-2.1.4.min.js", "blocker.js"],
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
+
+  // see https://developer.chrome.com/extensions/manifest for detail
+}
