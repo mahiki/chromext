@@ -1,2 +1,22 @@
-# chromext
+### chromext
 a place for all the chrome extensions
+
+### contents
+- **packages**
+	+ ex-er			latest .crx version
+- **ex-er**				removes references to certain celebrities
+- **snippets**			random bits of js or jquery that i barely know what they do
+- **make_page_red**		chrome developers example extention found at [samples page][1]
+- **sample-1** 			tutorial extension [from chrome getting started][2].  Of course the API don't workn now.
+- **hackapage**			someone's `hack this page` extension, as an example
+
+### notes
+gitignore the .pem files  
+.crx packages can be shared with friends very easily  
+publish to chrome web store - coming soon  
+
+
+###### links
+----
+[1]: https://developer.chrome.com/extensions/samples
+[2]: https://developer.chrome.com/extensions/getstarted
