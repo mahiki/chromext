@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twitter Opt",
+  "version": "0.0.1",
+  "description": "Various Twitter cleanup.",
+
+  "permissions": [
+    "http://twitter.com/",
+    "https://twitter.com/",
+    "storage"
+  ],
+
+  "web_accessible_resources": ["jquery-2.0.3.min.map"],
+
+  "content_scripts": [
+    {
+        "matches": ["http://twitter.com/*","https://twitter.com/*"],
+        "js": ["jquery-2.0.3.min.js", "main.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }
+  ]
+}

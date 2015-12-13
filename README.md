@@ -9,6 +9,7 @@ a place for all the chrome extensions
 - **make_page_red**		chrome developers example extention found at [samples page][1]
 - **sample-1** 			tutorial extension [from chrome getting started][2].  Of course the API don't workn now.
 - **hackapage**			someone's `hack this page` extension, as an example
+- **twitteropt**			simple feed decluttering, for twitter. REVIEW FOR EXPLOITS BEFORE LOADING.
 
 ### notes
 gitignore the .pem files  
