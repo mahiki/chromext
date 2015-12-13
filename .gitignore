@@ -1,6 +1,7 @@
 .architect
 .pem
 .crx
+.DS_Store
 packages/
 bootstrap.json
 build/
